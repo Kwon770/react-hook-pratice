@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useEffect } from "react";
 import ReactDOM from "react-dom";
 
 const useBeforeLeave = onBefore => {
