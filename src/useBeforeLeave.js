@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import ReactDOM from "react-dom";
 
 const useBeforeLeave = onBefore => {
-  const handle = () => {
+  const handle = event => {
     const { clientY } = event;
     if (clientY <= 0) {
       onBefore();
