@@ -1,11 +1,13 @@
-import React, { useState, useEffect, useRef } from "react";
 import ReactDOM from "react-dom";
 
 const usePreventLeave = () => {
   const listener = event => {
     event.preventDefault();
+    // For Prevent Error from chrome
     event.returnValue = "";
   };
+
+  // "beforeunload" : 브라우저 탭이 닫히기 전에 해당 함수를 실행
   const enablePrevent = () => window.addEventListener("beforeunload", listener);
   const disablePrevent = () =>
     window.removeEventListener("beforeunload", listener);
