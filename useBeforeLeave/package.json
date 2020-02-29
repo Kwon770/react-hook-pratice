@@ -1,0 +1,25 @@
+{
+  "name": "@skooks/use-before-leave",
+  "version": "1.0.0",
+  "description": "React Hooks to detect mouse leaving",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kwon770/react-hook-pratice.git"
+  },
+  "keywords": [
+    "react",
+    "hooks",
+    "mouse"
+  ],
+  "author": "kwon770 <sckwon770@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kwon770/react-hook-pratice/issues"
+  },
+  "homepage": "https://github.com/Kwon770/react-hook-pratice#readme",
+  "peerDependencies": {
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0"
+  }
+}
