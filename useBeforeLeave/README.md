@@ -24,3 +24,9 @@ function App() {
   return <h1>Hello Kooks</h1>;
 }
 ```
+
+### Arguments
+
+| Argument      | Type     | Description                                              | Required |
+| ------------- | -------- | -------------------------------------------------------- | -------- |
+| onBeforeLeave | function | Function to be called when the mouse leaves the document | yes      |
