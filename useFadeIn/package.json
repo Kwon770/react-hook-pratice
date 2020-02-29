@@ -1,0 +1,30 @@
+{
+  "name": "@skooks/use-fade-in",
+  "version": "1.0.0",
+  "description": "React Hook to fade in any element.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nomadcoders/skooks.git"
+  },
+  "keywords": [
+    "react",
+    "hooks",
+    "scroll",
+    "coords",
+    "x/y"
+  ],
+  "author": "Nicolás Serrano Arévalo <nico@nomadcoders.co>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nomadcoders/skooks/issues"
+  },
+  "homepage": "https://github.com/nomadcoders/skooks#readme",
+  "peerDependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

@@ -1,7 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
-import ReactDOM from "react-dom";
-
-const useFullscreen = callback => {
+export const useFullscreen = callback => {
   const element = useRef();
   const runCb = isFull => {
     if (callback && typeof callback === "function") {
@@ -23,6 +20,7 @@ const useFullscreen = callback => {
     }
   };
   const exitFull = () => {
+    document.exitFullscreen();
     if (document.exitFullscreen) {
       document.exitFullscreen();
     } else if (document.mozCancelFullScreen) {
@@ -36,22 +34,3 @@ const useFullscreen = callback => {
   };
   return { element, triggerFull, exitFull };
 };
-
-const App = () => {
-  const onFullScr = isFull => {
-    console.log(isFull ? "FULL" : "NOTFULL");
-  };
-  const { element, triggerFull, exitFull } = useFullscreen(onFullScr);
-  return (
-    <div className="App" style={{ height: "1000vh" }}>
-      <div ref={element}>
-        <img src="http://image.gamechosun.co.kr/wlwl_upload/dataroom/df/2018/08/28/277256_1535392631.jpg" />
-        <button onClick={exitFull}>Exit Fullscreen</button>
-      </div>
-      <button onClick={triggerFull}>Make Fullscreen</button>
-    </div>
-  );
-};
-
-const rootElement = document.getElementById("root");
-ReactDOM.render(<App />, rootElement);
